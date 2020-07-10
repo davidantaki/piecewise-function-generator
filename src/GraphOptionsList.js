@@ -1,16 +1,17 @@
 import React from 'react';
-import { hot } from 'react-hot-loader'
-import Option from "./Option.js"
+import { hot } from 'react-hot-loader';
+import GraphOption from './GraphOption.js'
 
-const GraphOptions = ({ options }) => {
+const GraphOptionsList = ({ options }) => {
     return (
         <ul>
-            {options.map(optionLabel => (
+
+            {options.map(option =>
                 <li>
-                    <Option label={optionLabel} />
+                    <GraphOption label={option.label} toggle={option.toggle} />
                 </li>
-            ))}
+            )}
         </ul>
     );
 }
-export default hot(module)(GraphOptions);
+export default hot(module)(GraphOptionsList);
