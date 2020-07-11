@@ -64,6 +64,7 @@ const App = () => {
             <InputField onInputChange={setFunctionInput} input={functionInputStr} label="Original Function" /><br />
             <InputField onInputChange={setxValInput} input={xValInput} label="x-Value" /><br />
             <InputField onInputChange={setyValInput} input={yValInput} label="y-Value" />
+            hi
 
         </div>
     );
