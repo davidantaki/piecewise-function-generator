@@ -59,6 +59,7 @@ const App = () => {
     return (
         <div className="App">
             <h1>Piecewise Generator</h1>
+            <h2>George is the best</h2>
             <GraphOptionsList options={graphOptions} />
             <Graph origFunctionStr={functionInputStr} showOrigFuncOpt={showOrigFuncOpt} showPiecewiseFuncOpt={showPiecewiseFuncOpt} />
             <InputField onInputChange={setFunctionInput} input={functionInputStr} label="Original Function" /><br />
